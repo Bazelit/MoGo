@@ -644,11 +644,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0 -15px;
 }
 
 .wedo__item {
     display: block;
     width: 50%;
+    padding: 0 15px;
+}
+
+.wedo__image {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* ---Accordion--- */
@@ -761,10 +769,16 @@ body {
 }
 
 .reviews__image {
+    width: 210px;
+    height: 210px;
     border: 3px solid #95e1d3;
     padding: 45px;
     margin-right: 60px;
     object-fit: contain;
+}
+
+.reviews__text {
+    padding-left: 100px;
 }
 
 .reviews__description {
@@ -896,6 +910,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 -15px;
+}
+
+.logos__item {
+    padding: 0 15px;
+}
+
+.logos__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* ---Works--- */
@@ -912,12 +937,12 @@ body {
 }
 
 .works__item {
+    position: relative;
     background: linear-gradient(
         0deg,
         rgba(252, 227, 138, 0.89) 0%,
         rgba(243, 129, 129, 0.89) 100%
     );
-    position: relative;
 }
 
 .works__item:hover .works__image {
@@ -930,6 +955,8 @@ body {
 
 .works__image {
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity 0.2s linear;
 }
 
@@ -976,7 +1003,8 @@ body {
 }
 
 .reviews__image-works {
-    margin-right: 30px;
+    width: 210px;
+    height: 210px;
 }
 
 /* ---Clients--- */
@@ -1063,6 +1091,7 @@ body {
 
 .blog__image {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .blog__item {
@@ -1197,6 +1226,17 @@ body {
 }
 
 /* ---Footer--- */
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-content__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .footer__content {
     display: flex;
 }
@@ -1432,6 +1472,19 @@ body {
         font-size: 100px;
         line-height: 100px;
     }
+    .reviews__description {
+        font-size: 20px;
+    }
+    .clients {
+        margin-bottom: 70px;
+    }
+    .blog__image {
+        justify-content: center;
+    }
+    .blog__item {
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -1462,13 +1515,17 @@ body {
     .services__item--border {
         border-bottom: 0;
     }
+    .reviews__image-works,
+    .reviews__image {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 770px) {
     .nav {
         display: none;
     }
-
     .card__image {
         margin-top: 50px;
         justify-content: center;
@@ -1499,9 +1556,51 @@ body {
     .services__icon {
         left: 0;
     }
+    .wedo__image {
+        display: none;
+    }
+    .wedo__item {
+        width: 100%;
+    }
+    .reviews__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    .reviews__image-works {
+        margin-bottom: 100px;
+    }
+    .reviews__image {
+        margin: 40px 0 40px 0;
+    }
+    .reviews .reviews__text {
+        margin-bottom: 50px;
+    }
+    .reviews__text {
+        padding: 0 70px 0 107px;
+    }
+    .team__text {
+        margin-bottom: 60px;
+    }
+    .detailed-service__descripton {
+        margin: 0 0 61px 0;
+    }
+    .works {
+        flex-wrap: wrap;
+    }
+    .works__col {
+        flex: none;
+        width: 50%;
+    }
+    .works__iamge {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 575px) {
+    .works__col {
+        width: 100%;
+    }
     .intro__subtitle {
         font-size: 22px;
     }
@@ -1538,5 +1637,48 @@ body {
     .devices-image__item-iphone {
         top: 323px;
         width: 212px;
+    }
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logos__item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .logos__image {
+        margin: 0 auto;
+    }
+    .users {
+        flex-wrap: wrap;
+    }
+    .footer__mogo {
+        margin-right: 0;
+    }
+    .footer__blogs {
+        margin-right: 0;
+        margin-bottom: 57px;
+    }
+    .footer__instagram {
+        right: 36px;
+    }
+    .footer-blogs__title {
+        margin-bottom: 23px;
+    }
+    .instagram__title {
+        margin-bottom: 23px;
+    }
+    .footer__email {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .email__input {
+        padding-right: 185px;
+        border-right: 1px solid #e7e7e7;
+    }
+    .email-button__link {
+        padding: 12px 136px;
+        left: 0;
     }
 }
