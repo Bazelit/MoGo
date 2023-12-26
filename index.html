@@ -11,22 +11,44 @@
         <div class="wrapper">
             <header class="header">
                 <div class="container">
-                    <div class="header__inner">
+                    <div class="header__menu menu">
                         <div class="header__logo">
                             <a href="#" class="header__logo">MoGO</a>
                         </div>
-                        <nav class="nav">
-                            <a href="#" class="nav__link active">ABOUT</a>
-                            <a href="#" class="nav__link">SERVICE</a>
-                            <a href="#" class="nav__link">WORK</a>
-                            <a href="#" class="nav__link">BLOG</a>
-                            <a href="#" class="nav__link">CONTACTS</a>
-                            <a href="#" class="nav__link"
+                        <div class="burger__menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="#about" class="menu__link"
+                                        >ABOUT</a
+                                    >
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#services" class="menu__link"
+                                        >SERVICE</a
+                                    >
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#our__works" class="menu__link"
+                                        >WORK</a
+                                    >
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#contacts" class="menu__link"
+                                        >CONTACTS</a
+                                    >
+                                </li>
+                            </ul>
+                            <!-- <a href="#" class="nav__link"
                                 ><img src="img/cart.png" alt=""
                             /></a>
                             <a href="#" class="nav__link"
                                 ><img src="img/search.png" alt=""
-                            /></a>
+                            /></a> -->
                         </nav>
                     </div>
                 </div>
@@ -62,7 +84,7 @@
                     </div>
                 </div>
             </section>
-            <section class="story-about">
+            <section id="about" class="story-about">
                 <div class="container">
                     <div class="story-about__content">
                         <div class="story-about__description">
@@ -171,7 +193,7 @@
                     </div>
                 </div>
             </section>
-            <section class="services">
+            <section id="services" class="services">
                 <div class="container">
                     <div class="services__content">
                         <div class="section__subtitle services__subtitle">
@@ -565,27 +587,51 @@
                 <div class="container">
                     <div class="logos">
                         <div class="logos__item">
-                            <img class="logos__image" src="img/barbershop-logos/1.png" alt="" />
+                            <img
+                                class="logos__image"
+                                src="img/barbershop-logos/1.png"
+                                alt=""
+                            />
                         </div>
                         <div class="logos__item">
-                            <img class="logos__image" src="img/barbershop-logos/2.png" alt="" />
+                            <img
+                                class="logos__image"
+                                src="img/barbershop-logos/2.png"
+                                alt=""
+                            />
                         </div>
                         <div class="logos__item">
-                            <img class="logos__image" src="img/barbershop-logos/3.png" alt="" />
+                            <img
+                                class="logos__image"
+                                src="img/barbershop-logos/3.png"
+                                alt=""
+                            />
                         </div>
                         <div class="logos__item">
-                            <img class="logos__image" src="img/barbershop-logos/4.png" alt="" />
+                            <img
+                                class="logos__image"
+                                src="img/barbershop-logos/4.png"
+                                alt=""
+                            />
                         </div>
                         <div class="logos__item">
-                            <img class="logos__image" src="img/barbershop-logos/5.png" alt="" />
+                            <img
+                                class="logos__image"
+                                src="img/barbershop-logos/5.png"
+                                alt=""
+                            />
                         </div>
                         <div class="logos__item">
-                            <img class="logos__image" src="img/barbershop-logos/6.png" alt="" />
+                            <img
+                                class="logos__image"
+                                src="img/barbershop-logos/6.png"
+                                alt=""
+                            />
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="our__works">
+            <section id="our__works" class="our__works">
                 <div class="container">
                     <div class="team__text">
                         <div class="section__subtitle team__subtitle">
@@ -857,139 +903,125 @@
                     </div>
                 </div>
             </section>
-            <section class="blog">
+            <section id="blog" class="section__blog">
                 <div class="container">
-                    <div class="blog__content">
-                        <div class="team__text">
-                            <div class="section__subtitle team__subtitle">
-                                Our stories
-                            </div>
-                            <div class="section__title team__title">
-                                Latest blog
-                            </div>
-                        </div>
-                        <div class="blog__image">
-                            <div class="blog__item">
-                                <div class="blog-item__image">
-                                    <div class="blog__date">
-                                        <div class="blog-date__text">
-                                            <div class="blog-date__num">15</div>
-                                            <div class="blog-date__month">
-                                                Jan
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="img/blog/1.png" alt="" />
+                    <div class="section__header">
+                        <h3 class="blog-main__suptitle">Our stories</h3>
+                        <h2 class="blog-main__title">Latest blog</h2>
+                    </div>
+
+                    <div class="blog">
+                        <div class="blog__item">
+                            <div class="blog__header">
+                                <a href="#">
+                                    <img
+                                        class="blog__photo"
+                                        src="img/blog/1.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <div class="blog__date">
+                                    <div class="blog__date-day">15</div>
+                                    Jan
                                 </div>
+                            </div>
+                            <div class="blog__content">
                                 <div class="blog__title">
-                                    Lorem ipsum dolor sit amet
+                                    <a href="#">Lorem ipsum dolor sit amet</a>
                                 </div>
-                                <div class="blog__description">
+                                <div class="blog__text">
                                     Consectetur adipiscing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna
                                     aliqua.
                                 </div>
-                                <div class="blog__line"></div>
-                                <div class="blog__stat">
-                                    <div class="blog__views">
-                                        <img
-                                            class="blog__icon"
-                                            src="img/blog/logo_1.png"
-                                            alt=""
-                                        />
-                                        <div class="stat__quantity">542</div>
-                                    </div>
-                                    <div class="blog__comments">
-                                        <img
-                                            class="blog__icon"
-                                            src="img/blog/logo_2.png"
-                                            alt=""
-                                        />
-                                        <div class="stat__quantity">17</div>
-                                    </div>
+                            </div>
+                            <div class="blog__footer">
+                                <div class="blog-stat">
+                                    <span class="blog-stat__item">
+                                        <i class="far fa-eye"></i> 542
+                                    </span>
+                                    <span class="blog-stat__item">
+                                        <i class="far fa-comment-dots"></i> 17
+                                    </span>
                                 </div>
                             </div>
-                            <div class="blog__item">
-                                <div class="blog-item__image">
-                                    <div class="blog__date">
-                                        <div class="blog-date__text">
-                                            <div class="blog-date__num">14</div>
-                                            <div class="blog-date__month">
-                                                Jan
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="img/blog/2.png" alt="" />
-                                </div>
-                                <div class="blog__title">
-                                    sed do eiusmod tempor
-                                </div>
-                                <div class="blog__description">
-                                    Adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </div>
-                                <div class="blog__line"></div>
-                                <div class="blog__stat">
-                                    <div class="blog__views">
-                                        <img
-                                            class="blog__icon"
-                                            src="img/blog/logo_1.png"
-                                            alt=""
-                                        />
-                                        <div class="stat__quantity">992</div>
-                                    </div>
-                                    <div class="blog__comments">
-                                        <img
-                                            class="blog__icon"
-                                            src="img/blog/logo_2.png"
-                                            alt=""
-                                        />
-                                        <div class="stat__quantity">42</div>
-                                    </div>
+                        </div>
+
+                        <div class="blog__item">
+                            <div class="blog__header">
+                                <a href="#">
+                                    <img
+                                        class="blog__photo"
+                                        src="img/blog/2.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <div class="blog__date">
+                                    <div class="blog__date-day">15</div>
+                                    Jan
                                 </div>
                             </div>
-                            <div class="blog__item">
-                                <div class="blog-item__image">
-                                    <div class="blog__date">
-                                        <div class="blog-date__text">
-                                            <div class="blog-date__num">12</div>
-                                            <div class="blog-date__month">
-                                                Jan
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="img/blog/3.png" alt="" />
-                                </div>
+                            <div class="blog__content">
                                 <div class="blog__title">
-                                    incididunt ut labore et dolore
+                                    <a href="#">Lorem ipsum dolor sit amet</a>
                                 </div>
-                                <div class="blog__description">
-                                    Elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua.
+                                <div class="blog__text">
+                                    Consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna
+                                    aliqua.
                                 </div>
-                                <div class="blog__line"></div>
-                                <div class="blog__stat">
-                                    <div class="blog__views">
-                                        <img
-                                            class="blog__icon"
-                                            src="img/blog/logo_1.png"
-                                            alt=""
-                                        />
-                                        <div class="stat__quantity">1560</div>
-                                    </div>
-                                    <div class="blog__comments">
-                                        <img
-                                            class="blog__icon"
-                                            src="img/blog/logo_2.png"
-                                            alt=""
-                                        />
-                                        <div class="stat__quantity">98</div>
-                                    </div>
+                            </div>
+                            <div class="blog__footer">
+                                <div class="blog-stat">
+                                    <span class="blog-stat__item">
+                                        <i class="far fa-eye"></i> 542
+                                    </span>
+                                    <span class="blog-stat__item">
+                                        <i class="far fa-comment-dots"></i> 17
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog__item">
+                            <div class="blog__header">
+                                <a href="#">
+                                    <img
+                                        class="blog__photo"
+                                        src="img/blog/3.png"
+                                        alt=""
+                                    />
+                                </a>
+                                <div class="blog__date">
+                                    <div class="blog__date-day">15</div>
+                                    Jan
+                                </div>
+                            </div>
+                            <div class="blog__content">
+                                <div class="blog__title">
+                                    <a href="#">Lorem ipsum dolor sit amet</a>
+                                </div>
+                                <div class="blog__text">
+                                    Consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna
+                                    aliqua.
+                                </div>
+                            </div>
+                            <div class="blog__footer">
+                                <div class="blog-stat">
+                                    <span class="blog-stat__item">
+                                        <i class="far fa-eye"></i> 542
+                                    </span>
+                                    <span class="blog-stat__item">
+                                        <i class="far fa-comment-dots"></i> 17
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- /.blog -->
                 </div>
+                <!-- /.container -->
             </section>
             <section class="map">
                 <div class="container">
@@ -1003,7 +1035,7 @@
                     </div>
                 </div>
             </section>
-            <footer class="footer">
+            <footer id="contacts" class="footer">
                 <div class="container">
                     <div class="footer__content">
                         <div class="footer__mogo">
@@ -1068,114 +1100,114 @@
                                     name="user_email"
                                 />
                                 <!-- <div class="email__button"> -->
-                                <a class="email-button__link" href="#"
+                                <a class="email-button__link" href="#!"
                                     >Subscribe</a
                                 >
                                 <!-- </div> -->
                             </div>
                         </div>
                         <div class="footer-content__images">
-                             <div class="footer__blogs">
-                            <div class="footer-blogs__title">blogs</div>
-                            <div class="footer-blogs__item">
-                                <img
-                                    class="footer-blogs__image"
-                                    src="img/footer/blogs/1.png"
-                                    alt=""
-                                />
-                                <div class="footer-blogs__text">
-                                    <div class="footer-blogs__description">
-                                        Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing
+                            <div class="footer__blogs">
+                                <div class="footer-blogs__title">blogs</div>
+                                <div class="footer-blogs__item">
+                                    <img
+                                        class="footer-blogs__image"
+                                        src="img/footer/blogs/1.png"
+                                        alt=""
+                                    />
+                                    <div class="footer-blogs__text">
+                                        <div class="footer-blogs__description">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing
+                                        </div>
+                                        <div class="footer-blogs__date">
+                                            Jan 9, 2016
+                                        </div>
                                     </div>
-                                    <div class="footer-blogs__date">
-                                        Jan 9, 2016
+                                </div>
+                                <div class="footer-blogs__item">
+                                    <img
+                                        class="footer-blogs__image"
+                                        src="img/footer/blogs/2.png"
+                                        alt=""
+                                    />
+                                    <div class="footer-blogs__text">
+                                        <div class="footer-blogs__description">
+                                            Consectetur adipiscing elit, sed do
+                                            eiusmod tempor
+                                        </div>
+                                        <div class="footer-blogs__date">
+                                            Jan 9, 2016
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-blogs__item">
+                                    <img
+                                        class="footer-blogs__image"
+                                        src="img/footer/blogs/3.png"
+                                        alt=""
+                                    />
+                                    <div class="footer-blogs__text">
+                                        <div class="footer-blogs__description">
+                                            sed do eiusmod tempor incididunt ut
+                                            labore
+                                        </div>
+                                        <div class="footer-blogs__date">
+                                            Jan 9, 2016
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="footer-blogs__item">
-                                <img
-                                    class="footer-blogs__image"
-                                    src="img/footer/blogs/2.png"
-                                    alt=""
-                                />
-                                <div class="footer-blogs__text">
-                                    <div class="footer-blogs__description">
-                                        Consectetur adipiscing elit, sed do
-                                        eiusmod tempor
+                            <div class="footer__instagram">
+                                <div class="instagram__title">instagram</div>
+                                <div class="instagram__images">
+                                    <div class="instagram-img__col">
+                                        <img
+                                            src="img/footer/instagram/1.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="img/footer/instagram/2.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="img/footer/instagram/3.png"
+                                            alt=""
+                                        />
                                     </div>
-                                    <div class="footer-blogs__date">
-                                        Jan 9, 2016
+                                    <div class="instagram-img__col">
+                                        <img
+                                            src="img/footer/instagram/4.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="img/footer/instagram/5.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="img/footer/instagram/6.png"
+                                            alt=""
+                                        />
                                     </div>
+                                    <div class="instagram-img__col">
+                                        <img
+                                            src="img/footer/instagram/7.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="img/footer/instagram/8.png"
+                                            alt=""
+                                        />
+                                        <img
+                                            src="img/footer/instagram/9.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="more-photos">
+                                    <a href="#">View more photos</a>
                                 </div>
                             </div>
-                            <div class="footer-blogs__item">
-                                <img
-                                    class="footer-blogs__image"
-                                    src="img/footer/blogs/3.png"
-                                    alt=""
-                                />
-                                <div class="footer-blogs__text">
-                                    <div class="footer-blogs__description">
-                                        sed do eiusmod tempor incididunt ut
-                                        labore
-                                    </div>
-                                    <div class="footer-blogs__date">
-                                        Jan 9, 2016
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer__instagram">
-                            <div class="instagram__title">instagram</div>
-                            <div class="instagram__images">
-                                <div class="instagram-img__col">
-                                    <img
-                                        src="img/footer/instagram/1.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="img/footer/instagram/2.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="img/footer/instagram/3.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="instagram-img__col">
-                                    <img
-                                        src="img/footer/instagram/4.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="img/footer/instagram/5.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="img/footer/instagram/6.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="instagram-img__col">
-                                    <img
-                                        src="img/footer/instagram/7.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="img/footer/instagram/8.png"
-                                        alt=""
-                                    />
-                                    <img
-                                        src="img/footer/instagram/9.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            <div class="more-photos">
-                                <a href="#">View more photos</a>
-                            </div>
-                        </div>
                         </div>
                     </div>
                     <div class="footer__line"></div>
@@ -1189,5 +1221,6 @@
             src="https://kit.fontawesome.com/02cd0ae13a.js"
             crossorigin="anonymous"
         ></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
